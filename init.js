@@ -22,8 +22,11 @@ if (cluster.isWorker){
             require('./lib/blockUnlocker.js');
             break;
         case 'paymentProcessor':
-            require('./lib/paymentProcessor.js');
+            require('./lib/ppsSystem.js');
             break;
+        case 'ppsSystem':
+            require('./lib/paymentProcessor.js');
+            break;            
         case 'api':
             require('./lib/api.js');
             break;
@@ -44,7 +47,7 @@ require('./lib/exceptionWriter.js')(logSystem);
 
 var singleModule = (function(){
 
-    var validModules = ['pool', 'api', 'unlocker', 'payments', 'chartsDataCollector'];
+    var validModules = ['pool', 'api', 'unlocker', 'pps', 'payments', 'chartsDataCollector'];
 
     for (var i = 0; i < process.argv.length; i++){
         if (process.argv[i].indexOf('-module=') === 0){
@@ -72,6 +75,9 @@ var singleModule = (function(){
                     break;
                 case 'unlocker':
                     spawnBlockUnlocker();
+                    break;
+                case 'pps':
+                    spawnPPS();
                     break;
                 case 'payments':
                     spawnPaymentProcessor();
@@ -205,6 +211,21 @@ function spawnBlockUnlocker(){
 
 }
 
+function spawnPPS(){
+
+    if (!config.poolServer.type == "pps") return;
+
+    var worker = cluster.fork({
+        workerType: 'ppsSystem'
+    });
+    worker.on('exit', function(code, signal){
+        log('error', logSystem, 'Payment processor died, spawning replacement...');
+        setTimeout(function(){
+            spawnPPS();
+        }, 2000);
+    });
+}
+
 function spawnPaymentProcessor(){
 
     if (!config.payments || !config.payments.enabled) return;
@@ -219,6 +240,7 @@ function spawnPaymentProcessor(){
         }, 2000);
     });
 }
+
 
 function spawnApi(){
     if (!config.api || !config.api.enabled) return;
