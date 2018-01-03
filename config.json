@@ -19,6 +19,7 @@
     "poolServer": {
         "enabled": true,
         "type": "pps", /* "pps" or "pplns" */
+        "ppsHash": 100, /* good share required hash. 1 = 1024 hash */
         "clusterForks": "auto",
         "poolAddress": "D6WLtrV1SBWV8HWQzQv8uuYuGy3uwZ8ah5iT5HovSqhTKMauquoTsKP8RBJzVqVesX87poYWQgkGWB4NWHJ6Ravv93v4BaE",
         "blockRefreshInterval": 1000,
