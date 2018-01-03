@@ -20,6 +20,7 @@
         "enabled": true,
         "type": "pps",
         "ppsReward": 0.1,
+        "ppsInterval": 60,
         "bonusReward": 0.5,
         "bonusChance": 1,
         "blockFinderBonus": 0.01,
