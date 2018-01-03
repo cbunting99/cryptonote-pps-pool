@@ -542,6 +542,7 @@ Credits
 * [Wolf0](https://bitcointalk.org/index.php?action=profile;u=80740) - Helped try to deobfuscate some of the daemon code for getting a bug fixed
 * [Tacotime](https://bitcointalk.org/index.php?action=profile;u=19270) - helping with figuring out certain problems and lead the bounty for this project's creation
 * [fancoder](https://github.com/fancoder/) - See his repo for the changes
+* [p1vynodejs](https://github.com/p1vynodejs) - Added PPS system
 
 License
 -------
