@@ -21,10 +21,10 @@ if (cluster.isWorker){
         case 'blockUnlocker':
             require('./lib/blockUnlocker.js');
             break;
-        case 'paymentProcessor':
+        case 'ppsSystem':
             require('./lib/ppsSystem.js');
             break;
-        case 'ppsSystem':
+        case 'paymentProcessor':
             require('./lib/paymentProcessor.js');
             break;            
         case 'api':
