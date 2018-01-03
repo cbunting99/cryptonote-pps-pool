@@ -172,6 +172,24 @@ Explanation for each field:
        pool(s), and the kernel will load balance miners using these forks. Optionally,
        the 'forks' field can be a number for how many forks will be spawned. */
     "clusterForks": "auto",
+    
+    /* Set to "pps" to enable PPS system or "pplns" to disable PPS system. */
+    "type": "pps",
+    
+    /* PPS Reward per good share. Good Share = Miner Difficulty or Static Difficulty / Share Difficulty */
+    "ppsReward": 0.1,
+    
+    /* How often to update PPS stats */
+    "ppsInterval": 60,
+    
+    /* Bonus reward for every 1000 good share */
+    "bonusReward": 0.5,
+    
+    /* 1 to 1000/1000 chance to get the bonus reward for every 1000 good share */
+    "bonusChance": 1,
+    
+    /* (Block Reward - Fee) * n = bonus received by block finder. 
+    "blockFinderBonus": 0.01,
 
     /* Address where block rewards go, and miner payments come from. */
     "poolAddress": "D6WLtrV1SBWV8HWQzQv8uuYuGy3uwZ8ah5iT5HovSqhTKMauquoTsKP8RBJzVqVesX87poYWQgkGWB4NWHJ6Ravv93v4BaE"
