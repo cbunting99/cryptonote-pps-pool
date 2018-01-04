@@ -1,11 +1,11 @@
 {
-    "name": "forknote-pool",
+    "name": "cryptonote-pps-pool",
     "version": "0.0.1",
     "license": "GPL-2.0",
-    "authors": "Matthew Little",
+    "authors": "p1vynodejs Matthew Little",
     "repository": {
         "type": "git",
-        "url": "https://github.com/forknote/forknote-pool"
+        "url": "https://github.com/p1vynodejs/cryptonote-pps-pool"
     },
     "dependencies": {
         "bignum": "*",
