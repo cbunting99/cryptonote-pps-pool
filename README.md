@@ -1,4 +1,4 @@
-cryptonote-forknote-pool
+cryptonote-pps-pool
 ====================
 
 High performance Node.js (with native C addons) mining pool for Cryptonote based coins, created with the Forknote software such as Bytecoin, Dashcoin, etc..
