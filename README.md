@@ -35,6 +35,7 @@ Comes with lightweight example front-end script which uses the pool's AJAX API.
     block percent, and less error prone
 * IP banning to prevent low-diff share attacks
 * Socket flooding detection
+* Pay Per Share
 * Payment processing
   * Splintered transactions to deal with max transaction size
   * Minimum payment threshold before balance will be paid out
@@ -80,6 +81,7 @@ Comes with lightweight example front-end script which uses the pool's AJAX API.
 
 #### Pools Using This Software
 
+* http://bestminepool.com/
 * http://democats.org
 * http://cryptonotepool.com/
 
@@ -108,7 +110,7 @@ you are using - a good place to start with redis is [data persistence](http://re
 Installing pool on different Linux distributives is different because it depends on system default components and versions. For now the easiest way to install pool is to use Ubuntu 14 LTS. Thus, all you had to do in order to prepare Ubunty 14 for pool installation is to run:
 
 ```bash
-sudo apt-get install git build-essential redis-server libboost1.55-all-dev nodejs-dev nodejs-legacy npm cmake libssl-dev
+sudo apt-get install git build-essential redis-server libboost-all-dev nodejs-dev nodejs-legacy npm cmake libssl-dev
 ```
 
 
@@ -118,7 +120,7 @@ sudo apt-get install git build-essential redis-server libboost1.55-all-dev nodej
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/forknote/cryptonote-universal-pool.git pool
+git clone https://github.com/p1vynodejs/cryptonote-universal-pool.git pool
 cd pool
 npm update
 ```
