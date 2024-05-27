@@ -120,7 +120,7 @@ sudo apt-get install git build-essential redis-server libboost-all-dev nodejs-de
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/p1vynodejs/cryptonote-universal-pool.git pool
+git clone https://github.com/cbunting99/cryptonote-pps-pool.git pool
 cd pool
 npm update
 ```
