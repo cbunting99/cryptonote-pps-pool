@@ -5,7 +5,7 @@
     "authors": "p1vynodejs Matthew Little",
     "repository": {
         "type": "git",
-        "url": "https://github.com/cbunting99/cryptonote-pps-pool"
+        "url": "https://github.com/p1vynodejs/cryptonote-pps-pool"
     },
     "dependencies": {
         "bignum": "*",
@@ -15,7 +15,7 @@
         "dateformat": "*",
         "base58-native": "*",
         "multi-hashing": "https://github.com/fancoder/node-multi-hashing.git",
-        "cryptonote-util": "https://github.com/fancoder/node-cryptonote-util"
+        "cryptonote-util": "git://github.com/forknote/node-cryptonote-util.git"
     },
     "engines": {
         "node": ">=0.10"
