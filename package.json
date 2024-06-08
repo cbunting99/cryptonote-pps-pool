@@ -8,14 +8,20 @@
         "url": "https://github.com/p1vynodejs/cryptonote-pps-pool"
     },
     "dependencies": {
-        "bignum": "*",
-        "async": "1",
-        "redis": "*",
-        "cli-color": "*",
-        "dateformat": "*",
-        "base58-native": "*",
-        "multi-hashing": "https://github.com/fancoder/node-multi-hashing.git",
-        "cryptonote-util": "https://github.com/forknote/node-cryptonote-util.git"
+        "async": "^1.5.2",
+        "base58-native": "^0.1.4",
+        "bignum": "^0.13.0",
+        "cli-color": "^1.2.0",
+        "cryptoforknote-util": "https://github.com/xun-project/node-cryptoforknote-util.git",
+        "cryptonight-hashing": "https://github.com/xun-project/node-cryptonight-hashing.git",
+        "dateformat": "^3.0.3",
+        "mailgun.js": "^2.0.1",
+        "node-telegram-bot-api": "^0.30.0",
+        "nodemailer": "^2.7.2",
+        "nodemailer-sendmail-transport": "^1.0.2",
+        "redis": "^2.8.0",
+        "socket.io": "^2.1.1",
+        "time-ago": "^0.2.1"
     },
     "engines": {
         "node": ">=0.10"

@@ -1,0 +1,23 @@
+{
+    "name": "cryptonote-pps-pool",
+    "version": "0.0.1",
+    "license": "GPL-2.0",
+    "authors": "p1vynodejs Matthew Little",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/p1vynodejs/cryptonote-pps-pool"
+    },
+    "dependencies": {
+        "bignum": "*",
+        "async": "1",
+        "redis": "*",
+        "cli-color": "*",
+        "dateformat": "*",
+        "base58-native": "*",
+        "multi-hashing": "https://github.com/xun-project/node-cryptonight-hashing.git",
+        "cryptonote-util": "https://github.com/xun-project/node-cryptoforknote-util.git"
+    },
+    "engines": {
+        "node": ">=0.10"
+    }
+}
