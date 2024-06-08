@@ -8,9 +8,9 @@ Comes with lightweight example front-end script which uses the pool's AJAX API.
 #### Requirements
 
 ```
-sudo apt-get install libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3
-sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
-sudo apt-get install php-zip zip
+sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3
+sudo apt-get install libboost-all-dev
+sudo apt-get install php-mbstring php-zip zip
 ```
 
 ```
@@ -38,10 +38,10 @@ npm update
 Explanation for each field:
 ```javascript
 /* Used for storage in redis so multiple coins can share the same redis instance. */
-"coin": "dashcoin",
+"coin": "graft",
 
 /* Used for front-end display */
-"symbol": "DSH",
+"symbol": "GRFT",
 
 /* Minimum units in a single coin, see COIN constant in DAEMON_CODE/src/cryptonote_config.h */
 "coinUnits": 1000000000000,
@@ -215,13 +215,13 @@ Explanation for each field:
 /* Coin daemon connection details. */
 "daemon": {
     "host": "127.0.0.1",
-    "port": 29081
+    "port": 18981
 },
 
 /* Wallet daemon connection details. */
 "wallet": {
     "host": "127.0.0.1",
-    "port": 29082
+    "port": 18982
 },
 
 /* Redis connection into. */
