@@ -89,24 +89,22 @@ Usage
 ===
 
 #### Requirements
-* Coin daemon(s) (find the coin's repo and build latest version from source)
-* simplewallet (Bytecoin/Forknote v1.1.11).  Do NOT use Forknote 2.0.0, since it's in alpha
+
 ```
-* [Node.js](http://nodejs.org/) v0.10+ ([follow these installation instructions](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager))
-* [Redis](http://redis.io/) key-value store v2.6+ ([follow these instructions](http://redis.io/topics/quickstart))
-* libssl required for the node-multi-hashing module
-  * For Ubuntu: `sudo apt-get install libssl-dev`
+sudo apt-get install libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3
+sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
+sudo apt-get install php-zip zip
+```
 
+```
+sudo apt-get update
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+source ~/.profile
+nvm install 12.13.0
+sudo apt-get install redis-server
+```
 
-##### Seriously
-Those are legitimate requirements. If you use old versions of Node.js or Redis that may come with your system package manager then you will have problems. Follow the linked instructions to get the last stable versions.
-
-
-[**Redis security warning**](http://redis.io/topics/security): be sure firewall access to redis - an easy way is to
-include `bind 127.0.0.1` in your `redis.conf` file. Also it's a good idea to learn about and understand software that
-you are using - a good place to start with redis is [data persistence](http://redis.io/topics/persistence).
-
-##### Easy install on Ubuntu 14 LTS
+##### Easy install on Ubuntu
 Installing pool on different Linux distributives is different because it depends on system default components and versions. For now the easiest way to install pool is to use Ubuntu 14 LTS. Thus, all you had to do in order to prepare Ubunty 14 for pool installation is to run:
 
 ```bash
