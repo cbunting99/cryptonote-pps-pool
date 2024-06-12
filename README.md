@@ -17,7 +17,7 @@ sudo apt-get install php-mbstring php-zip zip
 sudo apt-get update
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 source ~/.profile
-nvm install 12.13.0
+nvm install 12.22.6
 sudo apt-get install redis-server
 ```
 
