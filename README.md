@@ -9,7 +9,7 @@ Comes with lightweight example front-end script which uses the pool's AJAX API.
 
 ```
 sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3
-sudo apt-get install libboost-all-dev
+sudo apt-get install libboost-all-dev libzmq3-dev
 sudo apt-get install php-mbstring php-zip zip
 ```
 
