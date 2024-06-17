@@ -13,7 +13,7 @@
         "bignum": "^0.13.0",
         "cli-color": "^1.2.0",
         "multi-hashing": "https://github.com/cbunting99/node-cryptonight-hashing.git",
-        "cryptonote-util": "https://github.com/cbunting99/node-cryptoforknote-util.git"
+        "cryptonote-util": "https://github.com/cbunting99/node-cryptoforknote-util.git",
         "dateformat": "^3.0.3",
         "mailgun.js": "^2.0.1",
         "node-telegram-bot-api": "^0.30.0",
