@@ -1,6 +1,6 @@
 {
-    "coin": "graft",
-    "symbol": "GRFT",
+    "coin": "sispop",
+    "symbol": "SISPOP",
     "coinUnits": 1000000000000,
     "coinDifficultyTarget": 120,
     "version": "v2.1.1",
@@ -26,7 +26,7 @@
         "bonusChance": 1,
         "blockFinderBonus": 0.01,
         "clusterForks": "auto",
-        "poolAddress": "D6WLtrV1SBWV8HWQzQv8uuYuGy3uwZ8ah5iT5HovSqhTKMauquoTsKP8RBJzVqVesX87poYWQgkGWB4NWHJ6Ravv93v4BaE",
+        "poolAddress": "443HTigLHCZZH6fLhYCaZTE6KssrDxXGFB2g7bhPMRShS96mHh8ic7zAaBYXVctdbvbT47B3NmtfgVENqeKdwjCJU62KM7t",
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
         "ports": [
@@ -89,8 +89,8 @@
         "interval": 600,
         "maxAddresses": 50,
         "mixin": 3,
-        "transferFee": 50000000,
-        "minPayment": 1000000000,
+        "transferFee": 14000000000,
+        "minPayment": 1000000000000,
         "maxTransactionAmount": 0,
         "denomination": 1000000000
     },
@@ -109,7 +109,7 @@
         "enabled": true,
         "hashrateWindow": 600,
         "updateInterval": 5,
-        "port": 8117,
+        "port": 8187,
         "blocks": 30,
         "payments": 30,
         "password": "your_password"
@@ -117,12 +117,12 @@
 
     "daemon": {
         "host": "127.0.0.1",
-        "port": 18981
+        "port": 30000
     },
 
     "wallet": {
         "host": "127.0.0.1",
-        "port": 18982
+        "port": 22022
     },
 
     "redis": {

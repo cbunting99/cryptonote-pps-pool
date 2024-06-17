@@ -14,7 +14,7 @@
         "cli-color": "*",
         "dateformat": "*",
         "base58-native": "*",
-        "multi-hashing": "https://github.com/xun-project/node-cryptonight-hashing.git",
+        "cryptonight-hashing": "https://github.com/xun-project/node-cryptonight-hashing.git",
         "cryptonote-util": "https://github.com/xun-project/node-cryptoforknote-util.git"
     },
     "engines": {
