@@ -1,3 +1,4 @@
+```
 sudo apt-get install build-essential libboost-all-dev -y
 sudo apt-get install libsodium-dev libgmp3-dev node-gyp libssl-dev -y
 
@@ -10,3 +11,4 @@ sudo apt-get install redis-server
 git clone https://github.com/cbunting99/cryptonote-pps-pool.git pool
 cd pool
 npm update
+```
